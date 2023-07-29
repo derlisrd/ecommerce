@@ -6,9 +6,9 @@ const items = [
         price: 30000
     },
     {
-        title: 'Guayaba',
-        img: 'https://preview.colorlib.com/theme/ogani/img/featured/feature-3.jpg.webp',
-        price: 30000
+        title: 'Ropa de marca',
+        img: 'https://preview.colorlib.com/theme/essence/img/product-img/product-2.jpg.webp',
+        price: 58200
     },
     {
         title: 'Guayaba',
