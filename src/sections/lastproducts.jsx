@@ -16,8 +16,8 @@ const items = [
         price: 30000
     },
     {
-        title: 'Guayaba',
-        img: 'https://preview.colorlib.com/theme/ogani/img/featured/feature-3.jpg.webp',
+        title: 'Banana',
+        img: 'https://preview.colorlib.com/theme/ogani/img/product/product-2.jpg.webp',
         price: 30000
     },
     {
@@ -26,8 +26,8 @@ const items = [
         price: 6000
     },
     {
-        title: 'Guayaba',
-        img: 'https://preview.colorlib.com/theme/ogani/img/featured/feature-3.jpg.webp',
+        title: 'Ropa color roja',
+        img: 'https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg.webp',
         price: 30000
     },
     {

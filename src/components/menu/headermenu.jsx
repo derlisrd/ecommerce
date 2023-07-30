@@ -4,6 +4,7 @@ import Link from "next/link";
 import {GrClose} from 'react-icons/gr'
 import {BsCart4,BsSearch} from 'react-icons/bs'
 import {ImMenu} from 'react-icons/im'
+import BuscarField from '../TextFields/BuscarField';
 const menu = [
     {
         title:'inicio',
@@ -35,12 +36,7 @@ function HeaderMenu() {
     }
 
     return ( <header className="flex justify-between py-4 md:p-4">
-        <div className={`fixed ${buscar} justify-center items-center top-0 left-0 z-50 w-full h-full backdrop-blur-sm`}>
-            <div className='flex gap-4 flex-col'>  
-                <GrClose size={24} className='cursor-pointer' onClick={()=>{setBuscar('hidden')}} />
-                <input autoFocus className='border-2 text-4xl p-4' placeholder='Buscar...'/>
-            </div>
-        </div>
+        <BuscarField setBuscar={setBuscar} buscar={buscar} />
         <div>
             <h2 className='font-bold hover:text-green-600'>
                 <Link href='/'>STORE</Link>
