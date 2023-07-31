@@ -35,7 +35,11 @@ function HeaderMenu() {
             setOpen(open==='left-full' ? 'left-0' : 'left-full')
     }
 
-    return ( <header className="flex justify-between py-4 md:p-4 max-w-5xl mx-auto px-4 sticky top-0 shadow-md shadow-slate-200 z-10 bg-slate-50">
+    return ( 
+        <div className='shadow-md shadow-slate-200'>
+
+        
+        <header className="flex justify-between py-4 md:p-4 max-w-5xl mx-auto px-4 sticky top-0 z-10">
         <BuscarField setBuscar={setBuscar} buscar={buscar} />
         <div>
             <h2 className='font-bold hover:text-green-600'>
@@ -43,8 +47,8 @@ function HeaderMenu() {
             </h2>
         </div>
         <div className='flex flex-row items-center gap-2'>
-            <BsSearch className='cursor-pointer' size={20} onClick={()=>{ setBuscar('flex')}} />
-            <div>
+            <BsSearch className='cursor-pointer md:hidden' size={20} onClick={()=>{ setBuscar('flex')}} />
+            <div className='mx-4 md:hidden'>
                 <BsCart4 size={24} />
             </div>
         <ImMenu size={24} className="md:hidden cursor-pointer z-20 hover:text-green-600 ease-in duration-75" onClick={change} />
@@ -61,7 +65,8 @@ function HeaderMenu() {
         </nav>
         
         </div>
-    </header> );
+    </header> 
+    </div>);
 }
 
 export default HeaderMenu;
