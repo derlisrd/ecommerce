@@ -35,7 +35,7 @@ function HeaderMenu() {
             setOpen(open==='left-full' ? 'left-0' : 'left-full')
     }
 
-    return ( <header className="flex justify-between py-4 md:p-4">
+    return ( <header className="flex justify-between py-4 md:p-4 max-w-5xl mx-auto px-4 sticky top-0 shadow-md shadow-slate-200 z-10 bg-slate-50">
         <BuscarField setBuscar={setBuscar} buscar={buscar} />
         <div>
             <h2 className='font-bold hover:text-green-600'>
@@ -48,7 +48,7 @@ function HeaderMenu() {
                 <BsCart4 size={24} />
             </div>
         <ImMenu size={24} className="md:hidden cursor-pointer z-20 hover:text-green-600 ease-in duration-75" onClick={change} />
-        <nav className={`backdrop-blur-sm md:relative fixed w-full md:bg-none h-full top-0 ${open} md:left-0 z-10 text-center md:h-auto md:w-auto ease-in duration-100`}>
+        <nav className={`backdrop-blur-lg md:relative fixed w-full md:bg-none h-full top-0 ${open} md:left-0 z-10 text-center md:h-auto md:w-auto ease-in duration-100`}>
             <ul className="flex md:flex-row flex-col items-center justify-center h-full gap-4 md:gap-3 md:h-auto">
                 {
                     menu.map((e,i)=>(

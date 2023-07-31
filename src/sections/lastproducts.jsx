@@ -48,7 +48,7 @@ async function LastProducts() {
 
   return <section className="my-8">
         <h1 className="text-center font-bold text-2xl py-4">Productos destacados</h1>
-        <div className="grid md:grid-cols-4 gap-4 sm:grid-cols-2 grid-col-1">
+        <div className="grid md:grid-cols-4 gap-4 sm:grid-cols-2 grid-col-1 my-4">
             {
                 items.map((e,i)=>(
                     <div key={i} className="flex flex-col items-center">
