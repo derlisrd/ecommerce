@@ -26,6 +26,7 @@ async function LastProducts() {
                   src={e.image}
                   className="object-cover h-60 w-60 "
                   alt="imagen"
+                  loading="lazy"
                 />
               </div>
               <h5>{e.names}</h5>
