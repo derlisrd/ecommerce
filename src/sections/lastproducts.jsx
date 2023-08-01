@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const getData = async()=>{
-    let res = await fetch('https://api.sandapi.com/user_lMcC0o/products');
+    let res = await fetch('https://api.sandapi.com/user_lMcC0o/categories');
     if(!res){
         return []
     }
@@ -17,14 +17,14 @@ async function LastProducts() {
       <h1 className="text-center font-bold text-2xl py-4">
         Productos destacados
       </h1>
-      <div className="grid md:grid-cols-4 gap-4 sm:grid-cols-2 grid-col-1 my-4">
+      <div className="grid grid-col-2 md:grid-cols-4 md:gap-4 sm:grid-col-2 my-4">
         {items.map((e, i) => (
           <Link href={`/product/${e.sand_id}`} key={i}>
             <div className="flex flex-col items-center">
-              <div>
+              <div className="shadow-md shadow-slate-400 rounded-md">
                 <img
                   src={e.image}
-                  className="object-cover h-60 w-60 "
+                  className="object-cover rounded-md "
                   alt="imagen"
                   loading="lazy"
                 />

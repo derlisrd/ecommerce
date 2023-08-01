@@ -1,3 +1,4 @@
+import ImgHolder from "@/components/PlaceHolder/imgholder";
 import AddCartButton from "@/components/button/addcart";
 
 export default async function ProductPage({ params, searchParams }) {
@@ -12,15 +13,18 @@ export default async function ProductPage({ params, searchParams }) {
             <span className="font-semibold">SKU PC-75394</span>
           </h5>
         </div>
-        <div className="flex flex-row my-6 gap-4">
-          <div>
-            <div>
-
+        <div className="flex flex-col md:flex-row my-6 gap-4 w-full">
+          <div className="flex gap-4 flex-col-reverse flex-g">
+            <div className="flex flex-row gap-2 flex-wrap ">
+              <ImgHolder />
+              <ImgHolder />
+              <ImgHolder />
             </div>
             <div>
-                <img className="max-w-full h-auto rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="imagen" />
+                <img className="max-w-full h-auto rounded-md duration-100 ease-out" src="https://nissei.com/media/catalog/product/cache/16a9529cefd63504739dab4fc3414065/9/1/910-006_-_1.jpg" alt="imagen" />
             </div>
           </div>
+
           <div>
             <h2 className="font-semibold">218.000</h2>
             <h5>

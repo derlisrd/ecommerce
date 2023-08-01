@@ -3,6 +3,7 @@ import './globals.css'
 import { Montserrat } from 'next/font/google'
 import CartMenu from '@/components/menu/cartmenu'
 import HeaderMenu from '@/components/menu/headermenu'
+import MobileMenu from '@/sections/mobilemenu'
 
 const monse = Montserrat({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <CartMenu />
       <HeaderMenu />
         {children}
+        <MobileMenu />
       <Footer />
       </body>
     </html>
