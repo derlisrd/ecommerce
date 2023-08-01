@@ -29,7 +29,7 @@ async function LastProducts() {
                   loading="lazy"
                 />
               </div>
-              <h5>{e.names}</h5>
+              <h5>{e.name}</h5>
               <b>{e.price}</b>
             </div>
           </Link>
