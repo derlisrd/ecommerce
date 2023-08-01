@@ -33,7 +33,7 @@ export default async function ProductPage({ params, searchParams }) {
               ayuda.
             </h5>
 
-            <AddCartButton>AGREGAR LA CARRITO</AddCartButton>
+            <AddCartButton>AGREGAR AL CARRITO</AddCartButton>
           </div>
         </div>
       </div>
