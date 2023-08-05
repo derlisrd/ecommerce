@@ -8,7 +8,6 @@ export default async function ProductPage({ params, searchParams }) {
         <div className="border-b-slate-200 border-b">
           <h2 className="text-lg">Mouse Inalámbrico Logitech M650 Grande</h2>
           <h5 className="text-sm">
-            {" "}
             Sea El Primero En Dejar Una Reseña Para Este Artículo |{" "}
             <span className="font-semibold">SKU PC-75394</span>
           </h5>

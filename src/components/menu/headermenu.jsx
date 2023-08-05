@@ -52,7 +52,7 @@ function HeaderMenu() {
                 <BsCart4 size={24} />
             </div>
         <ImMenu size={24} className="md:hidden cursor-pointer z-20 hover:text-green-600 ease-in duration-75" onClick={change} />
-        <nav className={`backdrop-blur-lg md:relative fixed w-full md:bg-none h-full top-0 ${open} md:left-0 z-10 text-center md:h-auto md:w-auto ease-in duration-100`}>
+        <nav className={`backdrop-blur-xl md:relative fixed w-full md:bg-none h-full top-0 ${open} md:left-0 z-10 text-center md:h-auto md:w-auto ease-in duration-100`}>
             <ul className="flex md:flex-row flex-col items-center justify-center h-full gap-4 md:gap-3 md:h-auto">
                 {
                     menu.map((e,i)=>(
